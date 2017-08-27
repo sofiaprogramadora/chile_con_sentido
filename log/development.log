@@ -424,3 +424,110 @@ Processing by HomeController#main as HTML
 Completed 200 OK in 1665ms (Views: 1663.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:52:50 -0300
+  
+SyntaxError (/Users/gonzalosalinas/Desktop/event_sense/chile_con_sentido/app/controllers/home_controller.rb:5: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/Users/gonzalosalinas/Desktop/event_sense/chile_con_sentido/app/controllers/home_controller.rb:13: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^
+/Users/gonzalosalinas/Desktop/event_sense/chile_con_sentido/app/controllers/home_controller.rb:27: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> master
+  ^):
+  
+app/controllers/home_controller.rb:5: syntax error, unexpected <<
+app/controllers/home_controller.rb:13: syntax error, unexpected ===, expecting keyword_end
+app/controllers/home_controller.rb:27: syntax error, unexpected >>, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:52:55 -0300
+  
+SyntaxError (/Users/gonzalosalinas/Desktop/event_sense/chile_con_sentido/app/controllers/home_controller.rb:5: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/Users/gonzalosalinas/Desktop/event_sense/chile_con_sentido/app/controllers/home_controller.rb:13: syntax error, unexpected ===, expecting keyword_end
+=======
+   ^
+/Users/gonzalosalinas/Desktop/event_sense/chile_con_sentido/app/controllers/home_controller.rb:27: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> master
+  ^):
+  
+app/controllers/home_controller.rb:5: syntax error, unexpected <<
+app/controllers/home_controller.rb:13: syntax error, unexpected ===, expecting keyword_end
+app/controllers/home_controller.rb:27: syntax error, unexpected >>, expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:54:04 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1643.6ms)
+Completed 200 OK in 2669ms (Views: 2493.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 05:05:11 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1593.1ms)
+Completed 200 OK in 1616ms (Views: 1613.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 05:07:36 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.1ms)
+
+
+Started GET "/result" for 127.0.0.1 at 2017-08-27 05:08:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/result"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/home/result" for 127.0.0.1 at 2017-08-27 05:08:35 -0300
+Processing by HomeController#result as HTML
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 12ms
+
+
+  
+ActionView::Template::Error (undefined method `search' for nil:NilClass):
+     9: 
+    10: 
+    11: 	<p>
+    12: 		<% @client.search("to:Chile", result_type: "recent").take(3).each do |tweet| %>
+    13: 			<div>
+    14: 				<%=	tweet.text %>		
+    15: 			</div>
+  
+app/views/home/result.html.erb:12:in `_app_views_home_result_html_erb___2794537086212536430_70356986202680'
+Started GET "/home/result" for 127.0.0.1 at 2017-08-27 05:09:13 -0300
+Processing by HomeController#result as HTML
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1583.3ms)
+Completed 200 OK in 1603ms (Views: 1601.4ms)
+
+

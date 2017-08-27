@@ -1,35 +1,15 @@
-<form class="center search-all" id="center">
-    <div class="form-group cien-porciento">
-    	<input type="text" class="form-control search" placeholder="Search">
-    	<input type="submit" class="lupa" value="">
-    </div>
-</form>
+<div class="container-fluid banner">
+	<form class="center search-all" id="center">
+		<h1 class="lorem">Eventos Culturales en tu Zona</h1>
+		<h3 class="lorem ral">Encuentra</h3>
+	    <div class="form-group cien-porciento">
+	    	<input type="text col-sm-6" class="form-control search" placeholder="Search">
+	    	<input type="submit" class="lupa" value="">
+	    </div>
+</form>	
+</div>
 
 
-<p>
-	<% @client.search("to:Chile", result_type: "recent").take(3).each do |tweet| %>
-	<div>
-		<%=	tweet.text %>		
-	</div>
-	<div>
-		<%= tweet.user.screen_name %>
-	</div>
-	<br>
-
-	<% end %>	
-</p>
-
-<p>
-	<% @client.search('#eventos').take(3).each do |tweet| %>
-	<div>
-		<%=	tweet.text %>		
-	</div>
-	<div>
-		<%= tweet.user.screen_name %>
-	</div>
-	<br>
-	<% end %>	
-</p>
 
 
 <footer class="footer">

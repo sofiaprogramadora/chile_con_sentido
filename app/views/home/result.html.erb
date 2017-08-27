@@ -1,2 +1,37 @@
-<h1>Home#result</h1>
-<p>Find me in app/views/home/result.html.erb</p>
+<div class="container-fluid text-center">
+	<h1>Resultados</h1>
+	<h4>Eventos a los que debes ir</h4>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-8"></div>
+
+
+	<p>
+		<% @client.search("to:Chile", result_type: "recent").take(3).each do |tweet| %>
+			<div>
+				<%=	tweet.text %>		
+			</div>
+			<div>
+				<%= tweet.user.screen_name %>
+			</div>
+			<br>
+		<% end %>	
+	</p>
+
+	<p>
+		<% @client.search('#eventos').take(3).each do |tweet| %>
+			<div>
+				<%=	tweet.text %>		
+			</div>
+			<div>
+				%= tweet.user.screen_name %>
+			</div>
+			<br>
+		<% end %>	
+	</p>
+	</div>
+</div>
+
+
