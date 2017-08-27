@@ -15,12 +15,32 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway');
 
+@media screen and (min-width: 480px ) and (max-width: 720px) {
 
-@media screen and (min-width: 1024px ) and (max-width: 1980px ){
-	body{
-		background-image: url('<%= asset_path "bg-pc.png" %>');
+	.center, #center{
+		margin-left: 1%;
+		margin-right: 1%;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 900;
 	}
 
+	.cien-porciento{
+		width: 100%;
+	}
+
+	.lorem{
+		text-align: center;
+		margin-left: 1%;
+		margin-right: 1%;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 900;
+	}
+
+}
+@media screen and (min-width: 1024px ) and (max-width: 1980px ){
+.banner{
+	background-image: url('<%= asset_path "bg-pc.png" %>');
+}	
 
 	.center, #center{
 		margin-left: 1%;
