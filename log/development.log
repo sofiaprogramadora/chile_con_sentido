@@ -253,3 +253,174 @@ Processing by HomeController#main as HTML
 Started GET "/" for 127.0.0.1 at 2017-08-27 02:27:37 -0300
 Processing by HomeController#main as HTML
   Rendering home/main.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:38:34 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (2759.1ms)
+Completed 500 Internal Server Error in 3137ms
+
+
+  
+ActionView::Template::Error ():
+    18: 
+    19: 
+    20: <!-- <p>
+    21: <% @client_2.sample do |object| %>
+    22: <%=  object.text if object.is_a?(Twitter::Tweet) %>
+    23: <% end %>
+    24: </p> -->
+  
+app/views/home/main.html.erb:21:in `_app_views_home_main_html_erb___1952055091449737485_70265481323760'
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:41:22 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:41:41 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (919.3ms)
+Completed 500 Internal Server Error in 928ms
+
+
+  
+ActionView::Template::Error (undefined method `update' for #<Twitter::Streaming::Client:0x007fcfee2c6008>):
+    12: </p>
+    13: 
+    14: <p>
+    15:  <%= @client_2.update("I'm tweeting with @gem!") %>	
+    16: 
+    17:  <% @client_2.filter(locations: "-122.75,36.8,-121.75,37.8") do |tweet|  %>
+    18: <% puts tweet.text  %>
+  
+app/views/home/main.html.erb:15:in `_app_views_home_main_html_erb___1952055091449737485_70265515419060'
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:42:16 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1744.8ms)
+Completed 500 Internal Server Error in 1755ms
+
+
+  
+ActionView::Template::Error ():
+    13: 
+    14: <p>
+    15: 
+    16: <% @client_2.filter(locations: "-122.75,36.8,-121.75,37.8") do |tweet|  %>
+    17: <% puts tweet.text  %>
+    18: <% end %>
+    19: </p>
+  
+app/views/home/main.html.erb:16:in `_app_views_home_main_html_erb___1952055091449737485_70265493595620'
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:42:45 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (998.1ms)
+Completed 500 Internal Server Error in 1003ms
+
+
+  
+ActionView::Template::Error (undefined method `filter' for #<Twitter::REST::Client:0x007fcfeb9810f8>):
+    13: 
+    14: <p>
+    15: 
+    16: <% @client.filter(locations: "-122.75,36.8,-121.75,37.8") do |tweet|  %>
+    17: <% puts tweet.text  %>
+    18: <% end %>
+    19: </p>
+  
+app/views/home/main.html.erb:16:in `_app_views_home_main_html_erb___1952055091449737485_70265493773500'
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:43:10 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (936.6ms)
+Completed 200 OK in 1945ms (Views: 1942.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:52:27 -0300
+Started GET "/" for 127.0.0.1 at 2017-08-27 03:15:42 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (594.2ms)
+Completed 500 Internal Server Error in 986ms
+
+
+  
+ActionView::Template::Error (undefined method `text' for nil:NilClass):
+     8: 
+     9: 
+    10: <p>
+    11: 	<%= @client.search("#eventos -rt", lang: "ja").first.text %>	
+    12: </p>
+    13: 
+    14: <p>
+  
+app/views/home/main.html.erb:11:in `_app_views_home_main_html_erb___4539063407852612028_70356474165580'
+Started GET "/" for 127.0.0.1 at 2017-08-27 03:17:24 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (567.0ms)
+Completed 200 OK in 830ms (Views: 826.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 03:44:42 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (603.8ms)
+Completed 200 OK in 647ms (Views: 627.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 03:51:53 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (602.0ms)
+Completed 200 OK in 635ms (Views: 633.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 03:52:37 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (628.3ms)
+Completed 200 OK in 654ms (Views: 651.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:00:30 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (596.3ms)
+Completed 200 OK in 624ms (Views: 620.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:02:35 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (568.1ms)
+Completed 200 OK in 596ms (Views: 594.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:14:58 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1571.9ms)
+Completed 200 OK in 1588ms (Views: 1586.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:17:09 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1669.4ms)
+Completed 200 OK in 1690ms (Views: 1687.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:17:44 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1677.8ms)
+Completed 200 OK in 1694ms (Views: 1692.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 04:18:21 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1644.8ms)
+Completed 200 OK in 1665ms (Views: 1663.3ms)
+
+
