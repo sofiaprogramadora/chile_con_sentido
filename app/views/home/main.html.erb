@@ -3,15 +3,13 @@
 	<div class="form-group for input-finder ">
 		<h1 class="heading">Eventos Culturales en tu Zona</h1>
 		<h3 class="sub-heading ">Encuentra eventos culturales diferentes y gratuitos alrededor de tu ciudad</h3>
-		<%= form_tag home_result_path, class: "center search all", id: "center" do %>
+		<%= form_tag home_result_path, class: "center search all", id: "center", method: :get do %>
 		<%= text_field_tag :search, nil, class: "form-control search col-sm-6", placeholder: "Comienza Buscando Acá..." %>
 		<%= submit_tag " ", class: "lupa" %>
 		<% end %>
 	</div>
 
-	<% params %>
-	<% notice %>
-
+	<%= notice %>
 
 	<footer class="footer row">
 		<div class="logo-footer">

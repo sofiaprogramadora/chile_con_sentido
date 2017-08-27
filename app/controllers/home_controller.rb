@@ -1,16 +1,14 @@
 class HomeController < ApplicationController
 
   def main
-    @var = params[:search]
-  end
-
-
-  def show_result
-    @var = params[:search]
-    redirect_to home_result_path(search: @var), notice: "Su busqueda no obtuvo resultados"
   end
 
   def result
+    if params[:search].empty?
+      redirect_to root_path, notice: "Debes buscar algo"
+      return
+    end
+
     @var = params[:search]
     @client = Twitter::REST::Client.new do |config|
       config.consumer_key        = 'OXhoB33kWBAOSBpFg8M1f5iRu'
@@ -19,6 +17,9 @@ class HomeController < ApplicationController
       config.access_token_secret = 'XQZTbw2mdzl63B09pjEeTosLBxUR2NBaynl3j5paK78jf'
     end
 
+    @client_query = @client.search("to:#{@var}", result_type: "recent")
+    @hash_query = @client.search("##{@var}")
+    @tweets = (@client_query.to_a + @hash_query.to_a).first(20)
   end
 
 end

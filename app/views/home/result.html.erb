@@ -14,30 +14,13 @@
 	
 
 	<div class="row">
-		<div class="col-md-4">
-			<% @client.search("to:#{@var}", result_type: "recent").take(10).each do |tweet| %>
-				<p>
-					<%=	tweet.text %>
-				</p>
-				<br>
-				<p>
-					<%= tweet.user.screen_name %>
-				</p>
-				<br>
-
-			<% end %>
-		</div>	
-
-		<div>
-			<% @client.search("##{@var}").take(10).each do |tweet| %>
-			<p class="col-md-4">
-				<%=	tweet.text %>		
-			<br>
+		<% @tweets.each do |tweet| %>
+			<div class="col-md-4">
+				<h4> <%= tweet.text %> </h4>		
 				<%= tweet.user.screen_name %>
-			</p>
-			<% end %>
-			<br>	
-		</div>
+			</div>	
+
+		<% end %>
 	</div>
 </div>
 

@@ -3584,3 +3584,260 @@ Processing by HomeController#main as HTML
 Completed 200 OK in 44ms (Views: 42.0ms)
 
 
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:32:35 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lq+0Rntuqi8WuTp+W4xp/Mf4wH3lyk81WdjX4tM0tm7PoM/J8VXSPVlKhxXlG7oqtaCNqHc8s8fUefkmZzIw1w==", "search"=>"Hola", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (2127.3ms)
+Completed 200 OK in 2153ms (Views: 2150.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 09:32:51 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 48ms (Views: 45.5ms)
+
+
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:33:56 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ymn+nYkJScZuXNhcWvfq23pjcs/5M9b2kEbXbd+CotPz3YlctjzsUatAXlxvz4yd3ULpdGFROxGgVXFAqY7/8A==", "search"=>"chile", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1669.6ms)
+Completed 200 OK in 1692ms (Views: 1687.4ms)
+
+
+Started GET "/home/result" for 127.0.0.1 at 2017-08-27 09:36:51 -0300
+Processing by HomeController#result as HTML
+Completed 500 Internal Server Error in 1797ms
+
+
+  
+Twitter::Error::Forbidden (Missing or invalid url parameter.):
+  
+app/controllers/home_controller.rb:23:in `result'
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:37:03 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VXDOLoHoCD+MPotQmnjg9TE3b/hrGN3sThSL6c5OmqgMf7WhC9NwLcPNNjsk7zMjQ28iLfnuIR7DtaUtekgcEQ==", "search"=>"chile", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1782ms (Views: 32.1ms)
+
+
+Started GET "/home/result" for 127.0.0.1 at 2017-08-27 09:38:02 -0300
+Processing by HomeController#result as HTML
+Completed 500 Internal Server Error in 1908ms
+
+
+  
+Twitter::Error::Forbidden (Missing or invalid url parameter.):
+  
+app/controllers/home_controller.rb:23:in `result'
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:38:12 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VXDOLoHoCD+MPotQmnjg9TE3b/hrGN3sThSL6c5OmqgMf7WhC9NwLcPNNjsk7zMjQ28iLfnuIR7DtaUtekgcEQ==", "search"=>"chile", "commit"=>" "}
+Completed 500 Internal Server Error in 1816ms
+
+
+  
+RuntimeError ():
+  
+app/controllers/home_controller.rb:24:in `result'
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:20 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:20 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:26 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:26 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:33 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:40 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:43 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:47 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:48 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:38:49 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:39:14 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:39:16 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:39:18 -0300
+Started PUT "/__web_console/repl_sessions/fe74ed7476b8b6d9d8bfa5293a0bd9bf" for 127.0.0.1 at 2017-08-27 09:39:20 -0300
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:40:33 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VXDOLoHoCD+MPotQmnjg9TE3b/hrGN3sThSL6c5OmqgMf7WhC9NwLcPNNjsk7zMjQ28iLfnuIR7DtaUtekgcEQ==", "search"=>"chile", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 3109ms (Views: 24.1ms)
+
+
+Started GET "/home/result" for 127.0.0.1 at 2017-08-27 09:40:58 -0300
+Processing by HomeController#result as HTML
+Completed 500 Internal Server Error in 1684ms
+
+
+  
+Twitter::Error::Forbidden (Missing or invalid url parameter.):
+  
+app/controllers/home_controller.rb:23:in `result'
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:41:06 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VXDOLoHoCD+MPotQmnjg9TE3b/hrGN3sThSL6c5OmqgMf7WhC9NwLcPNNjsk7zMjQ28iLfnuIR7DtaUtekgcEQ==", "search"=>"chile", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 2783ms (Views: 19.3ms)
+
+
+Started GET "/home/result" for 127.0.0.1 at 2017-08-27 09:41:37 -0300
+Processing by HomeController#result as HTML
+Completed 500 Internal Server Error in 1756ms
+
+
+  
+Twitter::Error::Forbidden (Missing or invalid url parameter.):
+  
+app/controllers/home_controller.rb:23:in `result'
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:41:43 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VXDOLoHoCD+MPotQmnjg9TE3b/hrGN3sThSL6c5OmqgMf7WhC9NwLcPNNjsk7zMjQ28iLfnuIR7DtaUtekgcEQ==", "search"=>"chile", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2888ms (Views: 19.2ms)
+
+
+Started GET "/home/result" for 127.0.0.1 at 2017-08-27 09:42:05 -0300
+Processing by HomeController#result as HTML
+Completed 500 Internal Server Error in 1753ms
+
+
+  
+Twitter::Error::Forbidden (Missing or invalid url parameter.):
+  
+app/controllers/home_controller.rb:23:in `result'
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:42:08 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VXDOLoHoCD+MPotQmnjg9TE3b/hrGN3sThSL6c5OmqgMf7WhC9NwLcPNNjsk7zMjQ28iLfnuIR7DtaUtekgcEQ==", "search"=>"chile", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 2878ms (Views: 26.4ms)
+
+
+Started POST "/home/result" for 127.0.0.1 at 2017-08-27 09:43:26 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VXDOLoHoCD+MPotQmnjg9TE3b/hrGN3sThSL6c5OmqgMf7WhC9NwLcPNNjsk7zMjQ28iLfnuIR7DtaUtekgcEQ==", "search"=>"chile", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 2942ms (Views: 22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 09:44:41 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 22.2ms)
+
+
+Started GET "/home/result?utf8=%E2%9C%93&search=asd&commit=+" for 127.0.0.1 at 2017-08-27 09:44:42 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"asd", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5852ms (Views: 16.3ms)
+
+
+Started GET "/home/result?utf8=%E2%9C%93&search=asd&commit=+" for 127.0.0.1 at 2017-08-27 09:45:29 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"asd", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5926ms (Views: 17.7ms)
+
+
+Started GET "/home/result?utf8=%E2%9C%93&search=&commit=+" for 127.0.0.1 at 2017-08-27 09:46:49 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>" "}
+Completed 500 Internal Server Error in 1717ms
+
+
+  
+Twitter::Error::Forbidden (Missing or invalid url parameter.):
+  
+app/controllers/home_controller.rb:21:in `result'
+Started GET "/home/result?utf8=%E2%9C%93&search=&commit=+" for 127.0.0.1 at 2017-08-27 09:47:02 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>" "}
+Completed 500 Internal Server Error in 1850ms
+
+
+  
+Twitter::Error::Forbidden (Missing or invalid url parameter.):
+  
+app/controllers/home_controller.rb:21:in `result'
+Started PUT "/__web_console/repl_sessions/3a67eeea19d14617dbdda1bff0d18eb1" for 127.0.0.1 at 2017-08-27 09:47:07 -0300
+Started PUT "/__web_console/repl_sessions/3a67eeea19d14617dbdda1bff0d18eb1" for 127.0.0.1 at 2017-08-27 09:47:07 -0300
+Started PUT "/__web_console/repl_sessions/3a67eeea19d14617dbdda1bff0d18eb1" for 127.0.0.1 at 2017-08-27 09:47:10 -0300
+Started PUT "/__web_console/repl_sessions/3a67eeea19d14617dbdda1bff0d18eb1" for 127.0.0.1 at 2017-08-27 09:47:11 -0300
+Started PUT "/__web_console/repl_sessions/3a67eeea19d14617dbdda1bff0d18eb1" for 127.0.0.1 at 2017-08-27 09:47:12 -0300
+Started GET "/home/result?utf8=%E2%9C%93&search=&commit=+" for 127.0.0.1 at 2017-08-27 09:47:19 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>" "}
+Completed 500 Internal Server Error in 153ms
+
+
+  
+NameError (undefined local variable or method `main_path' for #<HomeController:0x007ffb96cf19a0>
+Did you mean?  main_app):
+  
+app/controllers/home_controller.rb:8:in `result'
+Started GET "/home/result?utf8=%E2%9C%93&search=&commit=+" for 127.0.0.1 at 2017-08-27 09:47:30 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>" "}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 09:47:30 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 23.4ms)
+
+
+Started GET "/home/result?utf8=%E2%9C%93&search=hola&commit=+" for 127.0.0.1 at 2017-08-27 09:47:32 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"hola", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 11434ms (Views: 25.3ms)
+
+
+Started GET "/home/result?utf8=%E2%9C%93&search=&commit=+" for 127.0.0.1 at 2017-08-27 09:47:53 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>" "}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 09:47:53 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 31.1ms)
+
+
+Started GET "/home/result?utf8=%E2%9C%93&search=&commit=+" for 127.0.0.1 at 2017-08-27 09:48:13 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "commit"=>" "}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-27 09:48:13 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 29.5ms)
+
+
+Started GET "/home/result?utf8=%E2%9C%93&search=chile+2&commit=+" for 127.0.0.1 at 2017-08-27 09:48:36 -0300
+Processing by HomeController#result as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"chile 2", "commit"=>" "}
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13762ms (Views: 21.2ms)
+
+
