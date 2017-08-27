@@ -18,7 +18,7 @@
 
 @media screen and (min-width: 1024px ) and (max-width: 1980px ){
 	body{
-	background-image: url('<%= asset_path "bg-pc.png" %>');
+		background-image: url('<%= asset_path "bg-pc.png" %>');
 	}
 
 
@@ -56,11 +56,11 @@
 		background: transparent url('<%= asset_path "lupa.png" %>');
 		background-size: 100% auto;
 		border: none;
-		height: 28px;
-		width: 29px;
+		height: 25px;
+		width: 26px;
 		float: right;
 		position: relative;
-		top: -32px;
+		top: -30px;
 	}
 
 
@@ -74,6 +74,8 @@
 
 	.search{
 		border-radius: 20px;
+		height: 60px;
+		font-size: 100%;
 	}
 
 	.logo{
@@ -94,6 +96,16 @@
 
 	.search-all{
 		position: relative;
+		top: 110px;
+	}
+
+	.search-all h1{
+		font-size: 70px;
+	}
+
+	.form-control{
+		width: 90%;
+		margin-left: 5%;
 	}
 }
 
