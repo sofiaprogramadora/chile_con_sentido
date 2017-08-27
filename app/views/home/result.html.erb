@@ -1,37 +1,46 @@
 <div class="container-fluid text-center">
 	<h1>Resultados</h1>
+	<br>
 	<h4>Eventos a los que debes ir</h4>
+	
+	<p>
+		<a href="<%= root_path %>" class= "btn btn-primary" role="button">Regresar</a>
+	</p> 
+
+
 </div>
 <div class="container">
+<div class="thumbnail">
+	
+
 	<div class="row">
-		<div class="col-md-4"></div>
-		<div class="col-md-8"></div>
+		<div class="col-md-4">
+			<% @client.search("to:#{@var}", result_type: "recent").take(10).each do |tweet| %>
+				<p>
+					<%=	tweet.text %>
+				</p>
+				<br>
+				<p>
+					<%= tweet.user.screen_name %>
+				</p>
+				<br>
 
+			<% end %>
+		</div>	
 
-	<p>
-		<% @client.search("to:Chile", result_type: "recent").take(3).each do |tweet| %>
-			<div>
+		<div>
+			<% @client.search("##{@var}").take(10).each do |tweet| %>
+			<p class="col-md-4">
 				<%=	tweet.text %>		
-			</div>
-			<div>
+			<br>
 				<%= tweet.user.screen_name %>
-			</div>
-			<br>
-		<% end %>	
-	</p>
-
-	<p>
-		<% @client.search('#eventos').take(3).each do |tweet| %>
-			<div>
-				<%=	tweet.text %>		
-			</div>
-			<div>
-				%= tweet.user.screen_name %>
-			</div>
-			<br>
-		<% end %>	
-	</p>
+			</p>
+			<% end %>
+			<br>	
+		</div>
 	</div>
+</div>
+
 </div>
 
 

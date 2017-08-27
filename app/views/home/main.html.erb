@@ -1,14 +1,16 @@
 <div class="container-fluid banner">
-	<form class="search-all col-sm-12 col-md-12" id="center">
+
+	<div class="form-group for input-finder ">
 		<h1 class="heading">Eventos Culturales en tu Zona</h1>
 		<h3 class="sub-heading ">Encuentra eventos culturales diferentes y gratuitos alrededor de tu ciudad</h3>
-	    <div class="form-group for input-finder ">
-	    	<input type="text" class="form-control search col-sm-12 col-md-12" placeholder="Comienza Buscando Acá...">
-	    	<input type="submit" class="lupa" value="">
-	    </div>
-	</form>	
+		<%= form_tag home_result_path, class: "center search all", id: "center" do %>
+		<%= text_field_tag :search, nil, class: "form-control search col-sm-6", placeholder: "Comienza Buscando Acá..." %>
+		<%= submit_tag " ", class: "lupa" %>
+		<% end %>
+	</div>
 
-
+	<% params %>
+	<% notice %>
 
 
 	<footer class="footer row">
@@ -18,3 +20,5 @@
 		</div>
 	</footer>
 </div>
+
+
