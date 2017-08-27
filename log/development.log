@@ -1,0 +1,175 @@
+Started GET "/" for 127.0.0.1 at 2017-08-26 20:51:28 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 19322ms (Views: 14914.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:14:10 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1001.6ms)
+Completed 500 Internal Server Error in 2632ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `twitter' for #<#<Class:0x00000002166ff0>:0x0000000208ee98>):
+    1: <h1>Home#main</h1>
+    2: 
+    3: 
+    4: <p><%= twitter.client%></p>
+  
+app/views/home/main.html.erb:4:in `_app_views_home_main_html_erb__3917496673526942551_26659620'
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:18:47 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (755.7ms)
+Completed 500 Internal Server Error in 907ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `client' for #<#<Class:0x00000003544cc0>:0x00000003532200>):
+    2: 
+    3: 
+    4: <p>
+    5: <%= client.sample do |object| %>
+    6: 	<%puts object.text if object.is_a?(Twitter::Tweet)%>
+    7: <%end%>	
+    8: </p>
+  
+app/views/home/main.html.erb:5:in `_app_views_home_main_html_erb__3917496673526942551_27929440'
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:27:15 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (19.9ms)
+Completed 500 Internal Server Error in 57ms
+
+
+  
+ActionView::Template::Error (undefined method `search' for nil:NilClass):
+    2: 
+    3: 
+    4: <p>
+    5: <%= @tweeter_client.search("#ruby -rt", lang: "ja").first.text %>	
+    6: </p>
+  
+app/views/home/main.html.erb:5:in `_app_views_home_main_html_erb__3917496673526942551_26286240'
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:29:26 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (851.1ms)
+Completed 500 Internal Server Error in 883ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tweeter_client' for #<#<Class:0x000000032219f8>:0x00000002d06180>):
+    2: 
+    3: 
+    4: <p>
+    5:  <%= tweeter_client.search("#ruby -rt", lang: "ja").first.text %>	
+    6: </p>
+  
+app/views/home/main.html.erb:5:in `_app_views_home_main_html_erb__3917496673526942551_23607580'
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:35:32 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 111ms
+
+
+  
+SyntaxError (/home/guillermo/Desktop/DesafioLATAM/september/chile_con_sentido/app/views/home/main.html.erb:9: syntax error, unexpected =>
+.take(3).collect do |tweet| =>
+                              ^
+/home/guillermo/Desktop/DesafioLATAM/september/chile_con_sentido/app/views/home/main.html.erb:13: syntax error, unexpected '<', expecting keyword_end
+</p>'.freeze;
+ ^
+/home/guillermo/Desktop/DesafioLATAM/september/chile_con_sentido/app/views/home/main.html.erb:13: unterminated regexp meets end of file):
+  
+app/views/home/main.html.erb:9: syntax error, unexpected =>
+app/views/home/main.html.erb:13: syntax error, unexpected '<', expecting keyword_end
+app/views/home/main.html.erb:13: unterminated regexp meets end of file
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:36:29 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 19ms
+
+
+  
+ActionView::Template::Error (undefined method `search' for nil:NilClass):
+    2: 
+    3: 
+    4: <p>
+    5:  <%= @client.search("#ruby -rt", lang: "ja").first.text %>	
+    6: </p>
+    7: <p>
+    8: </p>
+  
+app/views/home/main.html.erb:5:in `_app_views_home_main_html_erb__3917496673526942551_29480780'
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:38:04 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (5271.4ms)
+Completed 200 OK in 7339ms (Views: 7331.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:43:12 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1855.6ms)
+Completed 500 Internal Server Error in 1865ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `client' for #<#<Class:0x007f43b816d430>:0x007f43b81d78d0>
+Did you mean?  @client):
+     8: 
+     9: <% topics = ["coffee", "tea"] %>
+    10: 
+    11: <% client.filter(track: topics.join(",")) do |object| %>
+    12: <%=  object.text if object.is_a?(Twitter::Tweet) %>
+    13: <% end %>
+    14: 	
+  
+app/views/home/main.html.erb:11:in `_app_views_home_main_html_erb__3917496673526942551_69964414021220'
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:43:37 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1088.5ms)
+Completed 500 Internal Server Error in 1127ms
+
+
+  
+ActionView::Template::Error (undefined method `filter' for #<Twitter::REST::Client:0x007f43b8223aa0>):
+     8: 
+     9: <% topics = ["coffee", "tea"] %>
+    10: 
+    11: <% @client.filter(track: topics.join(",")) do |object| %>
+    12: <%=  object.text if object.is_a?(Twitter::Tweet) %>
+    13: <% end %>
+    14: 	
+  
+app/views/home/main.html.erb:11:in `_app_views_home_main_html_erb__3917496673526942551_69964414391300'
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:44:08 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1113.7ms)
+Completed 500 Internal Server Error in 1127ms
+
+
+  
+ActionView::Template::Error (undefined method `filter' for #<Twitter::REST::Client:0x007f43b84f81e0>):
+     8: 
+     9: <% topics = ["coffee", "tea"] %>
+    10: 
+    11: <% @client.filter(track: topics.join(",")) do |object| %>
+    12: <%=  object.text if object.is_a?(Twitter::Tweet) %>
+    13: <% end %>
+    14: 	
+  
+app/views/home/main.html.erb:11:in `_app_views_home_main_html_erb__3917496673526942551_69964415850260'
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:46:54 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2017-08-26 23:49:21 -0300

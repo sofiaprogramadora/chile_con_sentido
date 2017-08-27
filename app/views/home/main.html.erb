@@ -1,2 +1,13 @@
 <h1>Home#main</h1>
-<p>Find me in app/views/home/main.html.erb</p>
+
+
+<p>
+ <%= @client.search("#ruby -rt", lang: "ja").first.text %>	
+</p>
+<p>
+
+<% client.sample do |object| %>
+<%=  object.text if object.is_a?(Twitter::Tweet) %>
+<% end %>
+	
+</p>
