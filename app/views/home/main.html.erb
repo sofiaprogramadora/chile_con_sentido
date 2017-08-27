@@ -10,6 +10,23 @@
 </div>
 
 
+<<<<<<< HEAD
+<footer class="footer">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae harum deserunt, dicta possimus quod cupiditate enim illum, fuga nihil est tempora impedit ad quidem earum quasi id odio libero!</p>
+</footer>
+
+<p>
+<%= @client.search("#ruby -rt", lang: "ja").first.text %>    
+</p>
+<p>
+
+<% client.sample do |object| %>
+<%=  object.text if object.is_a?(Twitter::Tweet) %>
+<% end %>
+    
+</p>
+=======
 <footer class="footer col-md-12">
 	<p class="ft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae harum deserunt, dicta possimus quod cupiditate enim illum, fuga nihil est tempora impedit ad quidem earum quasi id odio libero!</p>
 </footer>
+>>>>>>> 7fbc62696d6cf62c5d9b0925e50481065b938952
