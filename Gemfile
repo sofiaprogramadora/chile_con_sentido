@@ -33,7 +33,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+<<<<<<< HEAD
 #Twitter Gem
+=======
+>>>>>>> master
 gem 'twitter'
 
 group :development, :test do

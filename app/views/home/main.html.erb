@@ -1,11 +1,13 @@
-<form class="center">
+<form class="center search-all" id="center">
 	<h1 class="lorem">LOREM</h1>
+	<p class="lorem ral">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum id eligendi nemo recusandae, magni assumenda iure similique at. Sed reprehenderit nesciunt tenetur et, veniam nemo excepturi? Ullam voluptates, sed vel.</p>
     <div class="form-group cien-porciento">
-    	<input type="text" class="form-control" placeholder="Search">
-    	<input type="submit" class="lupa cien-porciento" value="">
+    	<input type="text" class="form-control search" placeholder="Search">
+    	<input type="submit" class="lupa" value="">
     </div>
 </form>
 
+<<<<<<< HEAD
 
 <p>
 	<% @client.search("to:Chile", result_type: "recent").take(3).each do |tweet| %>
@@ -35,8 +37,29 @@
 
 
 
+=======
+<<<<<<< HEAD
+>>>>>>> master
 <footer class="footer">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae harum deserunt, dicta possimus quod cupiditate enim illum, fuga nihil est tempora impedit ad quidem earum quasi id odio libero!</p>
 </footer>
 
+<<<<<<< HEAD
 
+=======
+<p>
+<%= @client.search("#ruby -rt", lang: "ja").first.text %>    
+</p>
+<p>
+
+<% client.sample do |object| %>
+<%=  object.text if object.is_a?(Twitter::Tweet) %>
+<% end %>
+    
+</p>
+=======
+<footer class="footer col-md-12">
+	<p class="ft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae harum deserunt, dicta possimus quod cupiditate enim illum, fuga nihil est tempora impedit ad quidem earum quasi id odio libero!</p>
+</footer>
+>>>>>>> 7fbc62696d6cf62c5d9b0925e50481065b938952
+>>>>>>> master

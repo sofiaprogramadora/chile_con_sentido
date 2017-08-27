@@ -13,33 +13,91 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway');
 
 
+@media screen and (min-width: 1024px ) and (max-width: 1980px ){
+	body{
+	background-image: url('<%= asset_path "bg-pc.png" %>');
+	}
 
-.center{
-	margin-left: 1%;
-	margin-right: 1%;
+
+	.center, #center{
+		margin-left: 1%;
+		margin-right: 1%;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 900;
+	}
+
+	.cien-porciento{
+		width: 100%;
+	}
+
+	.lorem{
+		text-align: center;
+		margin-left: 1%;
+		margin-right: 1%;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 900;
+	}
+
+	.ral{
+		font-family: 'Raleway';
+	}
+
+	.footer{
+		margin-top: 40vw;
+		background-color: #48435c;
+	}
+
+	.lupa{
+		-webkit-appearance: none;
+		appearance: none;
+		background: transparent url('<%= asset_path "lupa.png" %>');
+		background-size: 100% auto;
+		border: none;
+		height: 28px;
+		width: 29px;
+		float: right;
+		position: relative;
+		top: -32px;
+	}
+
+
+	.lupa::after{
+		clear: both;
+	}
+
+	.ft{
+		font-family: Times;
+	}
+
+	.search{
+		border-radius: 20px;
+	}
+
+	.logo{
+		width: 50px;
+		position: relative;
+		top: -10px;
+	}
+
+	nav > div{
+		background-color: white;
+		border-radius: 0;
+	}
+
+	nav{
+		border-radius: none;
+	}
+
+
+	.search-all{
+		position: relative;
+	}
 }
 
-.cien-porciento{
-	width: 100%;
-}
 
-.lorem{
-	text-align: center;
-}
+@media screen and (min-width: 1024px ) and (max-width: 1980px ){
 
-
-.footer{
-
-}
-
-.lupa{
-	-webkit-appearance: none;
-	appearance: none;
-	background: transparent url('<%= asset_path "lupa.png" %>');
-	background-size:  100% auto;
-	border: none;
-	height: 39px;
-	width: 40px;
 }
