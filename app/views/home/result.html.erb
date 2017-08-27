@@ -9,9 +9,9 @@
 
 
 	<p>
-		<% @client.search("to:Chile", result_type: "recent").take(3).each do |tweet| %>
+		<% @client.search("to:#{@var}", result_type: "recent").take(3).each do |tweet| %>
 			<div>
-				<%=	tweet.text %>		
+				<%=	tweet.text %>
 			</div>
 			<div>
 				<%= tweet.user.screen_name %>
@@ -21,12 +21,12 @@
 	</p>
 
 	<p>
-		<% @client.search('#eventos').take(3).each do |tweet| %>
+		<% @client.search("##{@var}").take(3).each do |tweet| %>
 			<div>
 				<%=	tweet.text %>		
 			</div>
 			<div>
-				%= tweet.user.screen_name %>
+				<%= tweet.user.screen_name %>
 			</div>
 			<br>
 		<% end %>	

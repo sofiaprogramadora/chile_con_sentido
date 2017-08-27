@@ -1,16 +1,29 @@
 <div class="container-fluid banner">
-	<form class="center search-all" id="center">
-		<h1 class="lorem">Eventos Culturales en tu Zona</h1>
-		<h3 class="lorem ral">Encuentra</h3>
+<!-- 	<form class="center search-all" id="center">
+		
 	    <div class="form-group cien-porciento">
-	    	<input type="text col-sm-6" class="form-control search" placeholder="Search">
+	    	<input name="search"  action="<%#= home_show_result_path %>" type="text col-sm-6" class="form-control search" placeholder="Search">
 	    	<input type="submit" class="lupa" value="">
 	    </div>
-</form>	
+</form> -->
+
+
+
+<%= form_tag home_result_path, class: "center search all", id: "center" do %>
+	<h1 class="lorem">Eventos Culturales en tu Zona</h1>
+	<h3 class="lorem ral">Encuentra</h3>
+	<%= text_field_tag :search,nil, class: "form-control search col-sm-6", placeholder: "Search" %>
+	<%= submit_tag "Search", class: "lupa" %>
+<% end %>
 </div>
 
 
 
+</div>
+
+
+<%= params %>
+<%= notice %>
 
 <footer class="footer">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae harum deserunt, dicta possimus quod cupiditate enim illum, fuga nihil est tempora impedit ad quidem earum quasi id odio libero!</p>
