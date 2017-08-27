@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-<h1>Home#main</h1>
-
-
-<p>
- <%= @client.search("#ruby -rt", lang: "ja").first.text %>	
-</p>
-<p>
-
-<% client.sample do |object| %>
-<%=  object.text if object.is_a?(Twitter::Tweet) %>
-<% end %>
-	
-</p>
-=======
 <form class="center">
 	<h1 class="lorem">LOREM</h1>
     <div class="form-group cien-porciento">
@@ -21,7 +6,34 @@
     </div>
 </form>
 
+
+<p>
+ <%= @client.search("#ruby -rt", lang: "ja").first.text %>	
+</p>
+
+<p>
+ <%= @client.update("I'm tweeting with @gem!") %>	
+</p>
+
+
+
+<!-- <p>
+<% @client_2.sample do |object| %>
+<%=  object.text if object.is_a?(Twitter::Tweet) %>
+<% end %>
+</p> -->
+
+<!-- <p>
+
+<% @client_2.filter(locations: "-122.75,36.8,-121.75,37.8") do |tweet|  %>
+<% puts tweet.text  %>
+<% end %>
+
+</p> -->
+
+
 <footer class="footer">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus vitae harum deserunt, dicta possimus quod cupiditate enim illum, fuga nihil est tempora impedit ad quidem earum quasi id odio libero!</p>
 </footer>
->>>>>>> b9cd50ef53651c5126abe0313fa4b4a83cff38c8
+
+

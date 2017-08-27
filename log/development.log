@@ -173,3 +173,83 @@ Started GET "/" for 127.0.0.1 at 2017-08-26 23:46:54 -0300
 Processing by HomeController#main as HTML
   Rendering home/main.html.erb within layouts/application
 Started GET "/" for 127.0.0.1 at 2017-08-26 23:49:21 -0300
+Started GET "/" for 127.0.0.1 at 2017-08-27 01:51:35 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (2596.1ms)
+Completed 500 Internal Server Error in 4391ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `client' for #<#<Class:0x00000002667130>:0x0000000258e7e0>
+Did you mean?  @client
+               @client_2):
+     7: </p>
+     8: <p>
+     9: 
+    10: <% client.sample do |object| %>
+    11: <%=  object.text if object.is_a?(Twitter::Tweet) %>
+    12: <% end %>
+    13: 	
+  
+app/views/home/main.html.erb:10:in `_app_views_home_main_html_erb___4390484045151773052_32768660'
+Started GET "/" for 127.0.0.1 at 2017-08-27 01:52:26 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (1069.8ms)
+Completed 500 Internal Server Error in 1087ms
+
+
+  
+ActionView::Template::Error (undefined method `sample' for #<Twitter::REST::Client:0x00000004004cc8>):
+     7: </p>
+     8: <p>
+     9: 
+    10: <% @client.sample do |object| %>
+    11: <%=  object.text if object.is_a?(Twitter::Tweet) %>
+    12: <% end %>
+    13: 	
+  
+app/views/home/main.html.erb:10:in `_app_views_home_main_html_erb___4390484045151773052_33541920'
+Started GET "/" for 127.0.0.1 at 2017-08-27 01:53:12 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (328343.8ms)
+Completed 500 Internal Server Error in 328359ms
+
+
+  
+ActionView::Template::Error (end of file reached):
+     7: </p>
+     8: <p>
+     9: 
+    10: <% @client_2.sample do |object| %>
+    11: <%=  object.text if object.is_a?(Twitter::Tweet) %>
+    12: <% end %>
+    13: 	
+  
+app/views/home/main.html.erb:10:in `_app_views_home_main_html_erb___4390484045151773052_27311320'
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:02:40 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+  Rendered home/main.html.erb within layouts/application (308057.7ms)
+Completed 500 Internal Server Error in 308069ms
+
+
+  
+ActionView::Template::Error (end of file reached):
+    12: </p>
+    13: 
+    14: <p>
+    15: <% @client_2.sample do |object| %>
+    16: <%=  object.text if object.is_a?(Twitter::Tweet) %>
+    17: <% end %>
+    18: </p>
+  
+app/views/home/main.html.erb:15:in `_app_views_home_main_html_erb___4390484045151773052_35416340'
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:11:37 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2017-08-27 02:27:37 -0300
+Processing by HomeController#main as HTML
+  Rendering home/main.html.erb within layouts/application
