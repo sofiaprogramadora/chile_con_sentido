@@ -11,7 +11,7 @@ class HomeController < ApplicationController
 
     @var = params[:search]
     @client = Twitter::REST::Client.new do |config|
-
+    #
     end
 
     @client_query = @client.search("to:#{@var}", result_type: "recent")
